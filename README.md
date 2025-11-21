@@ -1,4 +1,4 @@
-# Ag Luto Ta 🍳
+# Ag Luto Ta 
 
 **Ag Luto Ta** is a simple and visually appealing web project showcasing popular **Philippine dishes**. Built using **HTML, CSS, and JavaScript**, this site provides recipe previews and detailed step-by-step instructions in an easy-to-navigate layout.
 
