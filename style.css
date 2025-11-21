@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #F5EEDC;
+  color: #333;
+}
+
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+   z-index: 200; 
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #6E8F67;
+}
+
+.hero {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #6E8F67;
+}
+
+.menu-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.menu-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #6E8F67;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.thumb {
+  width: 100%;
+  height: 200px; /* same height for all cards */
+  object-fit: cover; /* crop/scale image to fill the box nicely */
+  border-radius: 12px;
+}
+
+
+.menu-card h3 {
+  font-size: 18px;
+  color: #4F6B49;
+  font-weight: 500;
+}
+
+.menu-card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.menu-card a {
+  margin-top: 10px;
+  color: #6E8F67;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  overflow: hidden; 
+  z-index: 150; 
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: #FFFFFF;
+  width: 90%;
+  max-width: 480px;
+  max-height: 80vh; 
+  margin: 80px auto; 
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  overflow-y: auto; 
+  scroll-behavior: smooth;
+  z-index: 160;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: rgba(110, 143, 103, 0.5);
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+}
+
+.close-btn {
+  float: right;
+  text-decoration: none;
+  font-size: 26px;
+  color: #333;
+  margin-top: -10px;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+  color: #4F6B49;
+  font-weight: 600;
+}
+
+.modal-content h3 {
+  margin-top: 15px;
+  color: #6E8F67;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-content ul,
+.modal-content ol {
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: #6E8F67;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #4F6B49;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.6;
+}
