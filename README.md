@@ -6,7 +6,7 @@
 
 ## Features
 
-- Responsive grid layout of featured Filipino dishes.
+- Responsive grid layout of featured Filipino dishes and Desserts.
 - Individual **recipe modals** with ingredients and detailed cooking steps.
 - **Back to Top** button for easy navigation.
 - Simple, clean, and modern design using CSS and Google Fonts.
@@ -22,6 +22,10 @@
 4. **Kare-Kare** – Rich peanut sauce stew with oxtail and vegetables, served with bagoong.  
 5. **Pork Pata Humba (Istupado)** – Slow-cooked pork hock in a sweet-savory pineapple-soy sauce.  
 6. **Lechon** – Iconic Filipino roasted pig with crispy golden skin and juicy, flavorful meat.
+7. **Puto** - Soft and fluffy steamed rice cakes with a mild sweetness, perfect as a light snack or pang-partner sa savory dishes.
+8. **Leche Flan** - Rich and silky caramel custard made with egg yolks and milk, known for its smooth texture and deep caramel flavor.
+9. **Halo-Halo** - A refreshing mix of shaved ice, sweetened fruits, jellies, and milk, topped with leche flan or ice cream for a cold treat.
+7. **Mais Con Yelo** - A sweet and creamy shaved ice dessert made with corn, milk, and sugar, finished with ice cream for extra richness.
 
 ---
 
